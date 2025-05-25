@@ -1,23 +1,13 @@
 # DHBW-Mannheim-WI2023SEB-Microkernel
 
-Ein simples Plugin-System in TypeScript mit Microkernel-Architektur.
+**Core System**:
+- Basisfunktionen, stabil und erweiterbar
 
-## ▶️ Starten
+**Plugins / Erweiterungen**:
+- Plugin A und Plugin B beinhalten Logik und können zum Kern hinzugefügt werden
+- Plugins werden registriert
 
-```bash
-npm install
-npm run build
-npm start
-```
-
-## 📦 Struktur
-
-- `Core.ts`: Microkernel mit Pluginverwaltung
-- `Plugin.ts`: Interface
-- `HelloPlugin.ts`, `TimePlugin.ts`: Beispiel-Plugins
-- `index.ts`: Einstiegspunkt
-
-## 💡 Features
-
-- Plugin-Registrierung & -Ausführung
-- Erweiterbar & modular
+**Architektur-Erklärung:**
+- Core enthält nur notwendige Funktionalitäten.
+- Plugins können dynamisch hinzugefügt oder entfernt werden.
+- Vorteile: Hohe Anpassungsfähigkeit, stabile Basis.
